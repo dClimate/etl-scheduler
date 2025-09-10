@@ -2,8 +2,8 @@
  * Cron scheduler: defines tasks and wires them to the runner.
  */
 import cron from "node-cron";
-import { runTask } from "./runner.js";
-import type { ScriptTask } from "./types.js";
+import { runTask } from "./runner";
+import type { ScriptTask } from "./types";
 
 // Define your tasks here
 const tasks: ScriptTask[] = [

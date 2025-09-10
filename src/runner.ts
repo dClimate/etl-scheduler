@@ -6,8 +6,8 @@
 
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
-import type { ScriptTask, RunResult } from "./types.js";
-import { getLatestCIDForDataset, storeLatestCIDForDataset } from "./ceramic-adapter.js";
+import type { ScriptTask, RunResult } from "./types";
+import { getLatestCIDForDataset, storeLatestCIDForDataset } from "./ceramic-adapter";
 
 const execFileAsync = promisify(execFile);
 const datasetLocks = new Map<string, Promise<void>>();
