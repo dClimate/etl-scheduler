@@ -1,0 +1,12 @@
+[
+  {
+    "dataset": "test_1",
+    "command": "example_scripts/emit-cid.sh",
+    "cron": "0 0 * * *"
+  },
+  {
+    "dataset": "test_2",
+    "command": "example_scripts/emit-nochange.sh",
+    "cron": "0 0 * * *"
+  }
+]
